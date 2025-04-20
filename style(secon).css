@@ -33,7 +33,7 @@ nav a {
   transition: background-color 0.3s, color 0.3s;
 }
 nav a:hover {
-  background-color: #4caf50;
+  background-color: #4c80c5;
   color: white;
 }
 main {
@@ -52,8 +52,8 @@ section:hover {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 section h2 {
-  color: #4caf50;
-  border-bottom: 2px solid #4caf50;
+  color: #564caf;
+  border-bottom: 2px solid #564caf;
   padding-bottom: 5px;
   margin-bottom: 15px;
 }
@@ -71,7 +71,7 @@ footer {
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 footer a {
-  color: #4caf50;
+  color: #b7afff;
   text-decoration: none;
   font-weight: bold;
 }
