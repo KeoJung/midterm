@@ -3,59 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>중간고사 발표</title>
-    <link rel="stylesheet" href="style(gita).css" />
+    <title>세션과 쿠키</title>
+    <link rel="stylesheet" href="style(index).css" />
   </head>
   <body>
     <header>
-      <h1>세션과 쿠키의 중요성</h1>
-      <p>
-        웹 환경에서 사용자의 상태를 관리하고 사용자 경험을 향상시키는데 중요한
-        역할을 합니다.
-      </p>
+      <h1>세션과 쿠키</h1>
     </header>
-    <main>
+    <nav>
+      <a href="./gita.html">홈</a>
+    </nav>
+    <div class="container">
+      <section>
+        <h2 class="section-title">세션과 쿠키란?</h2>
+        <p>
+          세션과 쿠키는 웹 개발에서 사용자 정보를 저장하고 관리하는 데
+          사용됩니다. 세션은 서버에 저장되며, 쿠키는 클라이언트(브라우저)에
+          저장됩니다. 이 두 가지는 사용자 상태를 유지하고, 웹 애플리케이션의
+          기능을 향상시키는 데 중요한 역할을 합니다.
+        </p>
+        <p>
+          그리고 세션과 쿠키는 웹 애플리케이션에서 사용자 정보를 저장하고
+          관리하는 데 중요한 역할을 합니다. 이 두 가지는 서로 다른 방식으로
+          작동하지만, 사용자 경험을 향상시키는 데 필수적입니다.
+        </p>
+      <section>
+        <h2 class="section-title">세션이란?</h3>
+        <p>
+          세션(Session)은 사용자가 웹사이트를 방문하는 동안 서버에 사용자 정보를
+          저장하는 방식입니다. 세션은 서버에서 관리되며, 사용자가 브라우저를
+          닫거나 세션이 만료되면 삭제됩니다. 주로 로그인 상태 유지, 장바구니
+          기능 등 사용자 상태를 관리하는 데 사용됩니다.
+        </p>
+      </section>
+      <section>
+        <h2 class="section-title">쿠키란?</h2>
+        <p>
+          쿠키(Cookie)는 사용자의 컴퓨터(클라이언트)에 저장되는 작은 데이터
+          파일입니다. 쿠키는 사용자가 웹사이트를 다시 방문할 때 이전 상태를
+          기억하도록 도와줍니다. 예를 들어, 자동 로그인, 사용자 선호 설정 저장
+          등에 사용됩니다.
+        </p>
+        
+      </section>
+      <section>
+        <h2 class="section-title">세션과 쿠키의 차이점</h2>
+        <p>
+          세션과 쿠키는 서로 다른 방식으로 작동합니다. 세션은 서버에 저장되고,
+          쿠키는 클라이언트에 저장됩니다. 세션은 보안성이 높고, 쿠키는
+          클라이언트에서 직접 접근할 수 있어 보안성이 낮습니다. 또한, 세션은
+          서버 메모리를 사용하므로 속도가 느릴 수 있지만, 쿠키는 클라이언트에서
+          직접 접근하므로 속도가 빠릅니다.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>항목</th>
+              <th>세션</th>
+              <th>쿠키</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>저장 위치</td>
+              <td>서버</td>
+              <td>클라이언트</td>
+            </tr>
+            <tr>
+              <td>보안</td>
+              <td>높음</td>
+              <td>낮음</td>
+            </tr>
+            <tr>
+              <td>속도</td>
+              <td>느림</td>
+              <td>빠름</td>
+            </tr>
+          </tbody>
+        </table>
 
       <section>
-        <h2>주요 발표 내용</h2>
-        <ul>
-          <li>
-            <strong>세션:</strong> 서버가 서버 메모리에 통신 데이터를 저장하는
-            방식식
-          </li>
-          <li>
-            <strong>쿠키:</strong> 클라이언트가 통신 데이터를 사용자 컴퓨터에
-            저장해두는 방식
-          </li>
-          <li><strong>동작 방식:</strong> 세션과 쿠키의 동작 방식</li>
-        </ul>
+        <h2 class="section-title">세션과 쿠키의 동작 방식</h2>
+        <p>
+          세션과 쿠키는 서로 다른 방식으로 작동합니다. 세션은 서버에서 세션 ID를
+          생성하고, 클라이언트는 이 세션 ID를 쿠키에 저장하여 서버와 통신합니다.
+          반면, 쿠키는 클라이언트에 직접 데이터를 저장하며, 서버와의 통신 없이도
+          정보를 유지할 수 있습니다.
+        </p>
       </section>
-      <section>
-        <h2>발표 자료</h2>
-        <p>발표 자료는 아래 버튼을 누르면 확인할 수 있습니다.</p>
-        <a href="./index.html" target="_blank" class="button">발표 자료</a>
+
       </section>
-      <section">
-      <h2>팀원 소개</h2>
-      <div>
-        <div>
-          <h3>김민준</h3>
-          <p>팀원</p>
-          <a href="https://web-midtrem.vercel.app/">개인페이지</a>
-        </div>
-        <div>
-          <h3>양승권</h3>
-          <p>팀원</p>
-          <a href="https://web-midturm-732p.vercel.app/">개인페이지</a>
-        </div>
-        <div>
-          <h3>정연서</h3>
-          <p>팀장</p>
-          <a href="./jungyeonseo.html">개인페이지</a>
-        </div>
-      </div>
-    </section>
-    </main>
+    </div>
     <footer>
       <p>&copy; 2025 웹프로그래밍 2조</p>
     </footer>
