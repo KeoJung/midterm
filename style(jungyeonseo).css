@@ -1,96 +1,106 @@
+/* 전체 레이아웃 */
 body {
-  font-family: "Noto Sans KR", Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f9;
-  color: #333;
-}
-header {
-  background: url("florian-olivo-4hbJ-eymZ1o-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-  color: rgb(255, 255, 255);
-  padding: 2rem 0;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  position: relative;
-  z-index: 1;
-  height: 150px;
-  width: 100%;
-}
-header h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  margin: 0;
-}
-header p {
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-nav {
-  background-color: #333;
-  overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-nav a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: background-color 0.3s, color 0.3s;
-}
-nav a:hover {
-  background-color: #4c80c5;
-  color: white;
-}
-main {
-  padding: 20px;
-}
-section {
-  margin-bottom: 40px;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-.text-wrapper {
-  display: flex;
-  height: 300px;
+  font-family: "Noto Sans KR", Arial, sans-serif; /* 기본 글꼴 설정 */
+  margin: 0; /* 페이지 외부 여백 제거 */
+  padding: 0; /* 페이지 내부 여백 제거 */
+  background-color: #f4f4f9; /* 밝은 배경색 */
+  color: #333; /* 기본 텍스트 색상 */
 }
 
+/* 헤더 스타일 */
+header {
+  background: url("florian-olivo-4hbJ-eymZ1o-unsplash.jpg"); /* 배경 이미지 설정 */
+  background-size: cover; /* 배경 이미지를 컨테이너에 맞게 채움 */
+  background-position: center; /* 배경 이미지를 중앙에 정렬 */
+  color: rgb(255, 255, 255); /* 텍스트 색상 */
+  padding: 2rem 0; /* 상하 여백 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 헤더 아래 그림자 효과 */
+  position: relative; /* 요소의 위치를 설정 */
+  z-index: 1; /* 요소의 쌓임 순서 설정 */
+  height: 150px; /* 헤더 높이 */
+  width: 100%; /* 헤더 너비 */
+}
+header h1 {
+  font-size: 2.5rem; /* 제목 글꼴 크기 */
+  font-weight: bold; /* 제목 글꼴 두께 */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 텍스트 그림자 효과 */
+  margin: 0; /* 외부 여백 제거 */
+}
+header p {
+  font-size: 1.2rem; /* 부제목 글꼴 크기 */
+  margin-top: 0.5rem; /* 상단 여백 */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* 텍스트 그림자 효과 */
+}
+
+/* 네비게이션 스타일 */
+nav {
+  background-color: #333; /* 어두운 배경색 */
+  overflow: hidden; /* 내부 요소가 넘치지 않도록 설정 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 네비게이션 아래 그림자 효과 */
+}
+nav a {
+  float: left; /* 링크를 왼쪽으로 정렬 */
+  display: block; /* 블록 요소로 설정 */
+  color: white; /* 링크 텍스트 색상 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  padding: 14px 16px; /* 링크 내부 여백 */
+  text-decoration: none; /* 링크 밑줄 제거 */
+  transition: background-color 0.3s, color 0.3s; /* 배경색과 텍스트 색상 전환 애니메이션 */
+}
+nav a:hover {
+  background-color: #4c80c5; /* 마우스를 올렸을 때 배경색 변경 */
+  color: white; /* 마우스를 올렸을 때 텍스트 색상 유지 */
+}
+
+/* 메인 콘텐츠 */
+main {
+  padding: 20px; /* 내부 여백 */
+}
+
+/* 섹션 스타일 */
+section {
+  margin-bottom: 40px; /* 섹션 간 하단 여백 */
+  padding: 20px; /* 섹션 내부 여백 */
+  background-color: #fff; /* 섹션 배경색 */
+  border-radius: 8px; /* 모서리를 둥글게 설정 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 섹션 그림자 효과 */
+  transition: transform 0.3s, box-shadow 0.3s; /* 애니메이션 효과 */
+}
+.text-wrapper {
+  display: flex; /* 플렉스 박스 레이아웃 */
+  height: 300px; /* 높이 설정 */
+}
 section:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px); /* 마우스를 올렸을 때 섹션이 위로 이동 */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* 마우스를 올렸을 때 그림자 강조 */
 }
 section h2 {
-  color: #564caf;
-  border-bottom: 2px solid #564caf;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
+  color: #564caf; /* 제목 텍스트 색상 */
+  border-bottom: 2px solid #564caf; /* 제목 하단 강조선 */
+  padding-bottom: 5px; /* 강조선과 텍스트 간 여백 */
+  margin-bottom: 15px; /* 제목 하단 여백 */
 }
 section p {
-  line-height: 1.8;
+  line-height: 1.8; /* 텍스트 줄 간격 */
 }
+
+/* 푸터 스타일 */
 footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #333; /* 어두운 배경색 */
+  color: white; /* 텍스트 색상 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  padding: 10px 0; /* 상하 여백 */
+  position: fixed; /* 화면 하단에 고정 */
+  bottom: 0; /* 화면 하단 위치 */
+  width: 100%; /* 푸터 너비 */
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* 푸터 상단 그림자 효과 */
 }
 footer a {
-  color: #b7afff;
-  text-decoration: none;
-  font-weight: bold;
+  color: #b7afff; /* 링크 색상 */
+  text-decoration: none; /* 링크 밑줄 제거 */
+  font-weight: bold; /* 링크 텍스트 두께 */
 }
 footer a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* 마우스를 올렸을 때 밑줄 추가 */
 }
